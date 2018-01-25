@@ -33,7 +33,7 @@ if ('development' == app.get('env')) {
 }
 
 // Add routes here
-app.get('/', hello.view);
+app.get('/', hello.view);    // render "hello.view" when user request index ("/")
 
 app.get('/hello/:userName', hello.view);
 
